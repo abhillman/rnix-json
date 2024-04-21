@@ -1,0 +1,18 @@
+Given a nix file, print its AST in JSON format.
+
+**Example**:
+
+    $ cargo run --quiet example.nix | jq | head -n10
+    {
+      "kind": "NODE_ROOT",
+      "text_range": [
+        0,
+        446
+      ],
+      "children": [
+        {
+          "kind": "NODE_LAMBDA",
+          "text_range": [
+
+**Acknowledgments**
+This is but a tiny example for https://github.com/nix-community/rnix-parser.
