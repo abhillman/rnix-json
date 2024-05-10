@@ -1,18 +1,38 @@
-Given a nix file, print its AST in JSON format.
+**rnix-json**
 
-**Example**:
+What this does:
+* given a nix file, print its AST in JSON format
+* given an AST of a nix file in JSON, print it as nix
 
-    $ cargo run --quiet example.nix | jq | head -n10
+**Rationale**
+
+Using an intermediate representation of an AST in JSON can _may_ make it easier to modify a given AST. That said, this is an experiment!
+
+**Examples**:
+
+    % cargo run --quiet -- nix2json example.nix | head -n10
+      {
+        "kind": "NODE_ROOT",
+        "text_range": [
+          0,
+          446
+        ],
+        "children": [
+          {
+            "kind": "NODE_LAMBDA",
+            "text_range": [
+
+    % cargo run --quiet -- json2nix example.json | head -n10
+    { config, pkgs, ... }:
     {
-      "kind": "NODE_ROOT",
-      "text_range": [
-        0,
-        446
-      ],
-      "children": [
-        {
-          "kind": "NODE_LAMBDA",
-          "text_range": [
+      boot.loader.systemd-boot.enable = true;
+      boot.loader.efi.canTouchEfiVariables = true;
+
+      users.users.alice = {
+        isNormalUser = true;
+        extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+        packages = with pkgs; [
+          cowsay
 
 **Acknowledgments**
-This is but a tiny example for https://github.com/nix-community/rnix-parser.
+Relies upon https://github.com/nix-community/rnix-parser.

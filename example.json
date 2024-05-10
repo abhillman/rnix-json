@@ -1,0 +1,1723 @@
+{
+  "kind": "NODE_ROOT",
+  "text_range": [
+    0,
+    446
+  ],
+  "children": [
+    {
+      "kind": "NODE_LAMBDA",
+      "text_range": [
+        0,
+        445
+      ],
+      "children": [
+        {
+          "kind": "NODE_PATTERN",
+          "text_range": [
+            0,
+            21
+          ],
+          "children": [
+            {
+              "kind": "TOKEN_L_BRACE",
+              "text_range": [
+                0,
+                1
+              ],
+              "text": "{"
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                1,
+                2
+              ],
+              "text": " "
+            },
+            {
+              "kind": "NODE_PAT_ENTRY",
+              "text_range": [
+                2,
+                8
+              ],
+              "children": [
+                {
+                  "kind": "NODE_IDENT",
+                  "text_range": [
+                    2,
+                    8
+                  ],
+                  "children": [
+                    {
+                      "kind": "TOKEN_IDENT",
+                      "text_range": [
+                        2,
+                        8
+                      ],
+                      "text": "config"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "TOKEN_COMMA",
+              "text_range": [
+                8,
+                9
+              ],
+              "text": ","
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                9,
+                10
+              ],
+              "text": " "
+            },
+            {
+              "kind": "NODE_PAT_ENTRY",
+              "text_range": [
+                10,
+                14
+              ],
+              "children": [
+                {
+                  "kind": "NODE_IDENT",
+                  "text_range": [
+                    10,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "kind": "TOKEN_IDENT",
+                      "text_range": [
+                        10,
+                        14
+                      ],
+                      "text": "pkgs"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "TOKEN_COMMA",
+              "text_range": [
+                14,
+                15
+              ],
+              "text": ","
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                15,
+                16
+              ],
+              "text": " "
+            },
+            {
+              "kind": "TOKEN_ELLIPSIS",
+              "text_range": [
+                16,
+                19
+              ],
+              "text": "..."
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                19,
+                20
+              ],
+              "text": " "
+            },
+            {
+              "kind": "TOKEN_R_BRACE",
+              "text_range": [
+                20,
+                21
+              ],
+              "text": "}"
+            }
+          ]
+        },
+        {
+          "kind": "TOKEN_COLON",
+          "text_range": [
+            21,
+            22
+          ],
+          "text": ":"
+        },
+        {
+          "kind": "TOKEN_WHITESPACE",
+          "text_range": [
+            22,
+            23
+          ],
+          "text": "\n"
+        },
+        {
+          "kind": "NODE_ATTR_SET",
+          "text_range": [
+            23,
+            445
+          ],
+          "children": [
+            {
+              "kind": "TOKEN_L_BRACE",
+              "text_range": [
+                23,
+                24
+              ],
+              "text": "{"
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                24,
+                27
+              ],
+              "text": "\n  "
+            },
+            {
+              "kind": "NODE_ATTRPATH_VALUE",
+              "text_range": [
+                27,
+                66
+              ],
+              "children": [
+                {
+                  "kind": "NODE_ATTRPATH",
+                  "text_range": [
+                    27,
+                    58
+                  ],
+                  "children": [
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        27,
+                        31
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            27,
+                            31
+                          ],
+                          "text": "boot"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        31,
+                        32
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        32,
+                        38
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            32,
+                            38
+                          ],
+                          "text": "loader"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        38,
+                        39
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        39,
+                        51
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            39,
+                            51
+                          ],
+                          "text": "systemd-boot"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        51,
+                        52
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        52,
+                        58
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            52,
+                            58
+                          ],
+                          "text": "enable"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    58,
+                    59
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "TOKEN_ASSIGN",
+                  "text_range": [
+                    59,
+                    60
+                  ],
+                  "text": "="
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    60,
+                    61
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "NODE_IDENT",
+                  "text_range": [
+                    61,
+                    65
+                  ],
+                  "children": [
+                    {
+                      "kind": "TOKEN_IDENT",
+                      "text_range": [
+                        61,
+                        65
+                      ],
+                      "text": "true"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_SEMICOLON",
+                  "text_range": [
+                    65,
+                    66
+                  ],
+                  "text": ";"
+                }
+              ]
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                66,
+                69
+              ],
+              "text": "\n  "
+            },
+            {
+              "kind": "NODE_ATTRPATH_VALUE",
+              "text_range": [
+                69,
+                113
+              ],
+              "children": [
+                {
+                  "kind": "NODE_ATTRPATH",
+                  "text_range": [
+                    69,
+                    105
+                  ],
+                  "children": [
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        69,
+                        73
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            69,
+                            73
+                          ],
+                          "text": "boot"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        73,
+                        74
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        74,
+                        80
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            74,
+                            80
+                          ],
+                          "text": "loader"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        80,
+                        81
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        81,
+                        84
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            81,
+                            84
+                          ],
+                          "text": "efi"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        84,
+                        85
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        85,
+                        105
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            85,
+                            105
+                          ],
+                          "text": "canTouchEfiVariables"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    105,
+                    106
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "TOKEN_ASSIGN",
+                  "text_range": [
+                    106,
+                    107
+                  ],
+                  "text": "="
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    107,
+                    108
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "NODE_IDENT",
+                  "text_range": [
+                    108,
+                    112
+                  ],
+                  "children": [
+                    {
+                      "kind": "TOKEN_IDENT",
+                      "text_range": [
+                        108,
+                        112
+                      ],
+                      "text": "true"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_SEMICOLON",
+                  "text_range": [
+                    112,
+                    113
+                  ],
+                  "text": ";"
+                }
+              ]
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                113,
+                117
+              ],
+              "text": "\n\n  "
+            },
+            {
+              "kind": "NODE_ATTRPATH_VALUE",
+              "text_range": [
+                117,
+                324
+              ],
+              "children": [
+                {
+                  "kind": "NODE_ATTRPATH",
+                  "text_range": [
+                    117,
+                    134
+                  ],
+                  "children": [
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        117,
+                        122
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            117,
+                            122
+                          ],
+                          "text": "users"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        122,
+                        123
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        123,
+                        128
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            123,
+                            128
+                          ],
+                          "text": "users"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        128,
+                        129
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        129,
+                        134
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            129,
+                            134
+                          ],
+                          "text": "alice"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    134,
+                    135
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "TOKEN_ASSIGN",
+                  "text_range": [
+                    135,
+                    136
+                  ],
+                  "text": "="
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    136,
+                    137
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "NODE_ATTR_SET",
+                  "text_range": [
+                    137,
+                    323
+                  ],
+                  "children": [
+                    {
+                      "kind": "TOKEN_L_BRACE",
+                      "text_range": [
+                        137,
+                        138
+                      ],
+                      "text": "{"
+                    },
+                    {
+                      "kind": "TOKEN_WHITESPACE",
+                      "text_range": [
+                        138,
+                        143
+                      ],
+                      "text": "\n    "
+                    },
+                    {
+                      "kind": "NODE_ATTRPATH_VALUE",
+                      "text_range": [
+                        143,
+                        163
+                      ],
+                      "children": [
+                        {
+                          "kind": "NODE_ATTRPATH",
+                          "text_range": [
+                            143,
+                            155
+                          ],
+                          "children": [
+                            {
+                              "kind": "NODE_IDENT",
+                              "text_range": [
+                                143,
+                                155
+                              ],
+                              "children": [
+                                {
+                                  "kind": "TOKEN_IDENT",
+                                  "text_range": [
+                                    143,
+                                    155
+                                  ],
+                                  "text": "isNormalUser"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "TOKEN_WHITESPACE",
+                          "text_range": [
+                            155,
+                            156
+                          ],
+                          "text": " "
+                        },
+                        {
+                          "kind": "TOKEN_ASSIGN",
+                          "text_range": [
+                            156,
+                            157
+                          ],
+                          "text": "="
+                        },
+                        {
+                          "kind": "TOKEN_WHITESPACE",
+                          "text_range": [
+                            157,
+                            158
+                          ],
+                          "text": " "
+                        },
+                        {
+                          "kind": "NODE_IDENT",
+                          "text_range": [
+                            158,
+                            162
+                          ],
+                          "children": [
+                            {
+                              "kind": "TOKEN_IDENT",
+                              "text_range": [
+                                158,
+                                162
+                              ],
+                              "text": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "TOKEN_SEMICOLON",
+                          "text_range": [
+                            162,
+                            163
+                          ],
+                          "text": ";"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_WHITESPACE",
+                      "text_range": [
+                        163,
+                        168
+                      ],
+                      "text": "\n    "
+                    },
+                    {
+                      "kind": "NODE_ATTRPATH_VALUE",
+                      "text_range": [
+                        168,
+                        194
+                      ],
+                      "children": [
+                        {
+                          "kind": "NODE_ATTRPATH",
+                          "text_range": [
+                            168,
+                            179
+                          ],
+                          "children": [
+                            {
+                              "kind": "NODE_IDENT",
+                              "text_range": [
+                                168,
+                                179
+                              ],
+                              "children": [
+                                {
+                                  "kind": "TOKEN_IDENT",
+                                  "text_range": [
+                                    168,
+                                    179
+                                  ],
+                                  "text": "extraGroups"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "TOKEN_WHITESPACE",
+                          "text_range": [
+                            179,
+                            180
+                          ],
+                          "text": " "
+                        },
+                        {
+                          "kind": "TOKEN_ASSIGN",
+                          "text_range": [
+                            180,
+                            181
+                          ],
+                          "text": "="
+                        },
+                        {
+                          "kind": "TOKEN_WHITESPACE",
+                          "text_range": [
+                            181,
+                            182
+                          ],
+                          "text": " "
+                        },
+                        {
+                          "kind": "NODE_LIST",
+                          "text_range": [
+                            182,
+                            193
+                          ],
+                          "children": [
+                            {
+                              "kind": "TOKEN_L_BRACK",
+                              "text_range": [
+                                182,
+                                183
+                              ],
+                              "text": "["
+                            },
+                            {
+                              "kind": "TOKEN_WHITESPACE",
+                              "text_range": [
+                                183,
+                                184
+                              ],
+                              "text": " "
+                            },
+                            {
+                              "kind": "NODE_STRING",
+                              "text_range": [
+                                184,
+                                191
+                              ],
+                              "children": [
+                                {
+                                  "kind": "TOKEN_STRING_START",
+                                  "text_range": [
+                                    184,
+                                    185
+                                  ],
+                                  "text": "\""
+                                },
+                                {
+                                  "kind": "TOKEN_STRING_CONTENT",
+                                  "text_range": [
+                                    185,
+                                    190
+                                  ],
+                                  "text": "wheel"
+                                },
+                                {
+                                  "kind": "TOKEN_STRING_END",
+                                  "text_range": [
+                                    190,
+                                    191
+                                  ],
+                                  "text": "\""
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "TOKEN_WHITESPACE",
+                              "text_range": [
+                                191,
+                                192
+                              ],
+                              "text": " "
+                            },
+                            {
+                              "kind": "TOKEN_R_BRACK",
+                              "text_range": [
+                                192,
+                                193
+                              ],
+                              "text": "]"
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "TOKEN_SEMICOLON",
+                          "text_range": [
+                            193,
+                            194
+                          ],
+                          "text": ";"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_WHITESPACE",
+                      "text_range": [
+                        194,
+                        195
+                      ],
+                      "text": " "
+                    },
+                    {
+                      "kind": "TOKEN_COMMENT",
+                      "text_range": [
+                        195,
+                        228
+                      ],
+                      "text": "# Enable ‘sudo’ for the user."
+                    },
+                    {
+                      "kind": "TOKEN_WHITESPACE",
+                      "text_range": [
+                        228,
+                        233
+                      ],
+                      "text": "\n    "
+                    },
+                    {
+                      "kind": "NODE_ATTRPATH_VALUE",
+                      "text_range": [
+                        233,
+                        289
+                      ],
+                      "children": [
+                        {
+                          "kind": "NODE_ATTRPATH",
+                          "text_range": [
+                            233,
+                            241
+                          ],
+                          "children": [
+                            {
+                              "kind": "NODE_IDENT",
+                              "text_range": [
+                                233,
+                                241
+                              ],
+                              "children": [
+                                {
+                                  "kind": "TOKEN_IDENT",
+                                  "text_range": [
+                                    233,
+                                    241
+                                  ],
+                                  "text": "packages"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "TOKEN_WHITESPACE",
+                          "text_range": [
+                            241,
+                            242
+                          ],
+                          "text": " "
+                        },
+                        {
+                          "kind": "TOKEN_ASSIGN",
+                          "text_range": [
+                            242,
+                            243
+                          ],
+                          "text": "="
+                        },
+                        {
+                          "kind": "TOKEN_WHITESPACE",
+                          "text_range": [
+                            243,
+                            244
+                          ],
+                          "text": " "
+                        },
+                        {
+                          "kind": "NODE_WITH",
+                          "text_range": [
+                            244,
+                            288
+                          ],
+                          "children": [
+                            {
+                              "kind": "TOKEN_WITH",
+                              "text_range": [
+                                244,
+                                248
+                              ],
+                              "text": "with"
+                            },
+                            {
+                              "kind": "TOKEN_WHITESPACE",
+                              "text_range": [
+                                248,
+                                249
+                              ],
+                              "text": " "
+                            },
+                            {
+                              "kind": "NODE_IDENT",
+                              "text_range": [
+                                249,
+                                253
+                              ],
+                              "children": [
+                                {
+                                  "kind": "TOKEN_IDENT",
+                                  "text_range": [
+                                    249,
+                                    253
+                                  ],
+                                  "text": "pkgs"
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "TOKEN_SEMICOLON",
+                              "text_range": [
+                                253,
+                                254
+                              ],
+                              "text": ";"
+                            },
+                            {
+                              "kind": "TOKEN_WHITESPACE",
+                              "text_range": [
+                                254,
+                                255
+                              ],
+                              "text": " "
+                            },
+                            {
+                              "kind": "NODE_LIST",
+                              "text_range": [
+                                255,
+                                288
+                              ],
+                              "children": [
+                                {
+                                  "kind": "TOKEN_L_BRACK",
+                                  "text_range": [
+                                    255,
+                                    256
+                                  ],
+                                  "text": "["
+                                },
+                                {
+                                  "kind": "TOKEN_WHITESPACE",
+                                  "text_range": [
+                                    256,
+                                    263
+                                  ],
+                                  "text": "\n      "
+                                },
+                                {
+                                  "kind": "NODE_IDENT",
+                                  "text_range": [
+                                    263,
+                                    269
+                                  ],
+                                  "children": [
+                                    {
+                                      "kind": "TOKEN_IDENT",
+                                      "text_range": [
+                                        263,
+                                        269
+                                      ],
+                                      "text": "cowsay"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "TOKEN_WHITESPACE",
+                                  "text_range": [
+                                    269,
+                                    276
+                                  ],
+                                  "text": "\n      "
+                                },
+                                {
+                                  "kind": "NODE_IDENT",
+                                  "text_range": [
+                                    276,
+                                    282
+                                  ],
+                                  "children": [
+                                    {
+                                      "kind": "TOKEN_IDENT",
+                                      "text_range": [
+                                        276,
+                                        282
+                                      ],
+                                      "text": "lolcat"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "TOKEN_WHITESPACE",
+                                  "text_range": [
+                                    282,
+                                    287
+                                  ],
+                                  "text": "\n    "
+                                },
+                                {
+                                  "kind": "TOKEN_R_BRACK",
+                                  "text_range": [
+                                    287,
+                                    288
+                                  ],
+                                  "text": "]"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "TOKEN_SEMICOLON",
+                          "text_range": [
+                            288,
+                            289
+                          ],
+                          "text": ";"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_WHITESPACE",
+                      "text_range": [
+                        289,
+                        294
+                      ],
+                      "text": "\n    "
+                    },
+                    {
+                      "kind": "NODE_ATTRPATH_VALUE",
+                      "text_range": [
+                        294,
+                        319
+                      ],
+                      "children": [
+                        {
+                          "kind": "NODE_ATTRPATH",
+                          "text_range": [
+                            294,
+                            309
+                          ],
+                          "children": [
+                            {
+                              "kind": "NODE_IDENT",
+                              "text_range": [
+                                294,
+                                309
+                              ],
+                              "children": [
+                                {
+                                  "kind": "TOKEN_IDENT",
+                                  "text_range": [
+                                    294,
+                                    309
+                                  ],
+                                  "text": "initialPassword"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "TOKEN_WHITESPACE",
+                          "text_range": [
+                            309,
+                            310
+                          ],
+                          "text": " "
+                        },
+                        {
+                          "kind": "TOKEN_ASSIGN",
+                          "text_range": [
+                            310,
+                            311
+                          ],
+                          "text": "="
+                        },
+                        {
+                          "kind": "TOKEN_WHITESPACE",
+                          "text_range": [
+                            311,
+                            312
+                          ],
+                          "text": " "
+                        },
+                        {
+                          "kind": "NODE_STRING",
+                          "text_range": [
+                            312,
+                            318
+                          ],
+                          "children": [
+                            {
+                              "kind": "TOKEN_STRING_START",
+                              "text_range": [
+                                312,
+                                313
+                              ],
+                              "text": "\""
+                            },
+                            {
+                              "kind": "TOKEN_STRING_CONTENT",
+                              "text_range": [
+                                313,
+                                317
+                              ],
+                              "text": "test"
+                            },
+                            {
+                              "kind": "TOKEN_STRING_END",
+                              "text_range": [
+                                317,
+                                318
+                              ],
+                              "text": "\""
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "TOKEN_SEMICOLON",
+                          "text_range": [
+                            318,
+                            319
+                          ],
+                          "text": ";"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_WHITESPACE",
+                      "text_range": [
+                        319,
+                        322
+                      ],
+                      "text": "\n  "
+                    },
+                    {
+                      "kind": "TOKEN_R_BRACE",
+                      "text_range": [
+                        322,
+                        323
+                      ],
+                      "text": "}"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_SEMICOLON",
+                  "text_range": [
+                    323,
+                    324
+                  ],
+                  "text": ";"
+                }
+              ]
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                324,
+                328
+              ],
+              "text": "\n\n  "
+            },
+            {
+              "kind": "NODE_ATTRPATH_VALUE",
+              "text_range": [
+                328,
+                359
+              ],
+              "children": [
+                {
+                  "kind": "NODE_ATTRPATH",
+                  "text_range": [
+                    328,
+                    351
+                  ],
+                  "children": [
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        328,
+                        336
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            328,
+                            336
+                          ],
+                          "text": "services"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        336,
+                        337
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        337,
+                        344
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            337,
+                            344
+                          ],
+                          "text": "openssh"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        344,
+                        345
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        345,
+                        351
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            345,
+                            351
+                          ],
+                          "text": "enable"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    351,
+                    352
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "TOKEN_ASSIGN",
+                  "text_range": [
+                    352,
+                    353
+                  ],
+                  "text": "="
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    353,
+                    354
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "NODE_IDENT",
+                  "text_range": [
+                    354,
+                    358
+                  ],
+                  "children": [
+                    {
+                      "kind": "TOKEN_IDENT",
+                      "text_range": [
+                        354,
+                        358
+                      ],
+                      "text": "true"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_SEMICOLON",
+                  "text_range": [
+                    358,
+                    359
+                  ],
+                  "text": ";"
+                }
+              ]
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                359,
+                362
+              ],
+              "text": "\n  "
+            },
+            {
+              "kind": "NODE_ATTRPATH_VALUE",
+              "text_range": [
+                362,
+                409
+              ],
+              "children": [
+                {
+                  "kind": "NODE_ATTRPATH",
+                  "text_range": [
+                    362,
+                    401
+                  ],
+                  "children": [
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        362,
+                        370
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            362,
+                            370
+                          ],
+                          "text": "services"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        370,
+                        371
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        371,
+                        378
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            371,
+                            378
+                          ],
+                          "text": "openssh"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        378,
+                        379
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        379,
+                        387
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            379,
+                            387
+                          ],
+                          "text": "settings"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        387,
+                        388
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        388,
+                        401
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            388,
+                            401
+                          ],
+                          "text": "X11Forwarding"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    401,
+                    402
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "TOKEN_ASSIGN",
+                  "text_range": [
+                    402,
+                    403
+                  ],
+                  "text": "="
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    403,
+                    404
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "NODE_IDENT",
+                  "text_range": [
+                    404,
+                    408
+                  ],
+                  "children": [
+                    {
+                      "kind": "TOKEN_IDENT",
+                      "text_range": [
+                        404,
+                        408
+                      ],
+                      "text": "true"
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_SEMICOLON",
+                  "text_range": [
+                    408,
+                    409
+                  ],
+                  "text": ";"
+                }
+              ]
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                409,
+                413
+              ],
+              "text": "\n\n  "
+            },
+            {
+              "kind": "NODE_ATTRPATH_VALUE",
+              "text_range": [
+                413,
+                443
+              ],
+              "children": [
+                {
+                  "kind": "NODE_ATTRPATH",
+                  "text_range": [
+                    413,
+                    432
+                  ],
+                  "children": [
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        413,
+                        419
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            413,
+                            419
+                          ],
+                          "text": "system"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TOKEN_DOT",
+                      "text_range": [
+                        419,
+                        420
+                      ],
+                      "text": "."
+                    },
+                    {
+                      "kind": "NODE_IDENT",
+                      "text_range": [
+                        420,
+                        432
+                      ],
+                      "children": [
+                        {
+                          "kind": "TOKEN_IDENT",
+                          "text_range": [
+                            420,
+                            432
+                          ],
+                          "text": "stateVersion"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    432,
+                    433
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "TOKEN_ASSIGN",
+                  "text_range": [
+                    433,
+                    434
+                  ],
+                  "text": "="
+                },
+                {
+                  "kind": "TOKEN_WHITESPACE",
+                  "text_range": [
+                    434,
+                    435
+                  ],
+                  "text": " "
+                },
+                {
+                  "kind": "NODE_STRING",
+                  "text_range": [
+                    435,
+                    442
+                  ],
+                  "children": [
+                    {
+                      "kind": "TOKEN_STRING_START",
+                      "text_range": [
+                        435,
+                        436
+                      ],
+                      "text": "\""
+                    },
+                    {
+                      "kind": "TOKEN_STRING_CONTENT",
+                      "text_range": [
+                        436,
+                        441
+                      ],
+                      "text": "23.11"
+                    },
+                    {
+                      "kind": "TOKEN_STRING_END",
+                      "text_range": [
+                        441,
+                        442
+                      ],
+                      "text": "\""
+                    }
+                  ]
+                },
+                {
+                  "kind": "TOKEN_SEMICOLON",
+                  "text_range": [
+                    442,
+                    443
+                  ],
+                  "text": ";"
+                }
+              ]
+            },
+            {
+              "kind": "TOKEN_WHITESPACE",
+              "text_range": [
+                443,
+                444
+              ],
+              "text": "\n"
+            },
+            {
+              "kind": "TOKEN_R_BRACE",
+              "text_range": [
+                444,
+                445
+              ],
+              "text": "}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "TOKEN_WHITESPACE",
+      "text_range": [
+        445,
+        446
+      ],
+      "text": "\n"
+    }
+  ]
+}
