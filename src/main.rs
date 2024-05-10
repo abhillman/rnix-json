@@ -1,12 +1,13 @@
-pub mod kinds;
-
-use rnix::{NixLanguage, Parse};
 use std::process::exit;
 use std::{env, fs};
 
-use crate::kinds::KindType;
-use rowan::{GreenNodeBuilder, Language, SyntaxNode};
-use serde_json::Value;
+use rnix::{NixLanguage, Parse};
+use rowan::{GreenNodeBuilder, SyntaxNode};
+
+use crate::ast_entry::AstEntry;
+
+mod ast_entry;
+pub mod kinds;
 
 const JSON2NIX: &str = "json2nix";
 const NIX2JSON: &str = "nix2json";
@@ -48,50 +49,32 @@ fn usage_exit() {
     exit(1)
 }
 
-pub fn to_nix(path: &String) -> String {
-    let json: Value = serde_json::from_str(path.as_str()).unwrap();
+pub fn to_nix(json_content: &String) -> String {
+    fn rec(ast_entry: AstEntry, builder: &mut GreenNodeBuilder) {
+        let kind = ast_entry.raw_kind().clone();
+        match ast_entry {
+            AstEntry::Node { children, .. } => {
+                builder.start_node(kind);
+                for child in children {
+                    rec(child, builder)
+                }
+                builder.finish_node()
+            }
+            AstEntry::Token { text, .. } => builder.token(kind, text.as_str()),
+        }
+    }
+
+    let ast_entry: AstEntry = serde_json::from_str(json_content).unwrap();
     let mut builder = GreenNodeBuilder::new();
-    rec(&json, &mut builder);
+    rec(ast_entry, &mut builder);
+
     let green_node = builder.finish();
     let syntax_node: SyntaxNode<NixLanguage> = SyntaxNode::new_root(green_node);
     format!("{}", syntax_node.text())
 }
 
-fn rec(json: &Value, builder: &mut GreenNodeBuilder) {
-    let kind_str = json
-        .get("kind")
-        .expect("Missing 'kind'")
-        .as_str()
-        .expect("Expected type string for 'kind'");
-    let kind_rnix = kinds::from_str(kind_str);
-    let kind = NixLanguage::kind_to_raw(kind_rnix);
-
-    match kinds::kind_type(NixLanguage::kind_from_raw(kind)) {
-        KindType::TOKEN => builder.token(
-            kind,
-            json["text"]
-                .as_str()
-                .expect("Expected type string for 'kind'"),
-        ),
-        KindType::NODE => builder.start_node(kind),
-        KindType::LAST => panic!("developer error"),
-    }
-
-    if let Some(children) = json.get("children") {
-        if let Some(children) = children.as_array() {
-            for child in children {
-                rec(child, builder);
-            }
-        }
-    }
-
-    if kinds::kind_type(NixLanguage::kind_from_raw(kind)) == KindType::NODE {
-        builder.finish_node();
-    }
-}
-
-pub fn to_json(content: &String) -> String {
-    let parse: Parse<rnix::Root> = rnix::Root::parse(&content);
+pub fn to_json(nix_content: &String) -> String {
+    let parse: Parse<rnix::Root> = rnix::Root::parse(&nix_content);
     for error in parse.errors() {
         eprintln!("error: {}", error);
     }
@@ -101,8 +84,9 @@ pub fn to_json(content: &String) -> String {
 
 #[cfg(test)]
 mod test {
-    use crate::{to_json, to_nix};
     use std::fs;
+
+    use crate::{to_json, to_nix};
 
     #[test]
     fn t1() {
