@@ -6,7 +6,7 @@ use crate::kinds;
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(untagged)]
-pub(crate) enum AstEntry {
+pub enum AstEntry {
     Node {
         kind: String,
         text_range: Vec<u32>,
