@@ -34,5 +34,8 @@ Using an intermediate representation of an AST in JSON can _may_ make it easier 
         packages = with pkgs; [
           cowsay
 
+**Disclaimer**
+I am learning Rust! Much here is not idiomatic.
+
 **Acknowledgments**
 Relies upon https://github.com/nix-community/rnix-parser.
