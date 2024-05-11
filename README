@@ -10,7 +10,7 @@ Using an intermediate representation of an AST in JSON can _may_ make it easier 
 
 **Examples**:
 
-    % cargo run --quiet -- nix2json example.nix | head -n10
+    % cargo run --quiet -- example.nix | head -n10
       {
         "kind": "NODE_ROOT",
         "text_range": [
@@ -22,7 +22,7 @@ Using an intermediate representation of an AST in JSON can _may_ make it easier 
             "kind": "NODE_LAMBDA",
             "text_range": [
 
-    % cargo run --quiet -- json2nix example.json | head -n10
+    % cargo run --quiet -- example.json | head -n10
     { config, pkgs, ... }:
     {
       boot.loader.systemd-boot.enable = true;
@@ -35,7 +35,7 @@ Using an intermediate representation of an AST in JSON can _may_ make it easier 
           cowsay
 
 **Disclaimer**
-I am learning Rust! Much here is not idiomatic.
+I am learning Rust! Much here may not be idiomatic.
 
 **Acknowledgments**
 Relies upon https://github.com/nix-community/rnix-parser.

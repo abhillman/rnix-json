@@ -8,14 +8,14 @@ pub fn to_nix(json_content: &str) -> String {
     fn rec(ast_entry: crate::ast_entry::AstEntry, builder: &mut GreenNodeBuilder) {
         let kind = ast_entry.raw_kind();
         match ast_entry {
-            crate::ast_entry::AstEntry::Node { children, .. } => {
+            ast_entry::AstEntry::Node { children, .. } => {
                 builder.start_node(kind);
                 for child in children {
                     rec(child, builder)
                 }
                 builder.finish_node()
             }
-            crate::ast_entry::AstEntry::Token { text, .. } => builder.token(kind, text.as_str()),
+            ast_entry::AstEntry::Token { text, .. } => builder.token(kind, text.as_str()),
         }
     }
 
